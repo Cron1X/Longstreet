@@ -1,9 +1,25 @@
 <html>
  
 <body>
-  <h1>Josh</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+  <h1>Universal facts </h1> 
+
+ <p> Unscramble the sentence </p> 
+ 
+ <script>
+ let arr = ['Dino', ' Loves', ' cheese', 'cake']
+
+
+   var i = arr.length, k , temp;      // k is to generate random index and temp is to swap the values
+   while(--i > 0){
+      k = Math.floor(Math.random() * (i+1));
+      temp = arr[k];
+      arr[k] = arr[i];
+      arr[i] = temp;
+   }
+  document.write(arr);
+  
+ </script>
+ 
 </body>
  
 </html>
